@@ -3,7 +3,7 @@ Contributors: innermond
 Tags: printing calculator, offset calculator, calculator
 Requires at least: 3.4.2
 Tested up to: 3.4.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,8 @@ well known for people from printing field like:
 
 = Translations =
 
-Thank you all guys, who submitted translations to your language. The plugin is currently available in following languages:
+Thank you all guys, who submitted translations to your language. CodeColorer
+is currently available in following languages:
 
 * English
 * Romanian
@@ -60,6 +61,10 @@ prices will be calculated regarding copies volume. But if you fill adventurous j
 
 
 == Changelog ==
+
+= 1.1 =
+* A brutal bug solved which altered calculation on sideprint cases. Now working
+
 = 1.0 =
 * A more realistic dependence between price and the number of copies based on logarithmic curve
 * Improve validation mechanique to show errors over ajax and highlight offending inputbox to give strong clue about error source.
