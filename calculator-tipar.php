@@ -3,7 +3,7 @@
 Plugin Name: PHP - Printing House Pricer
 Plugin URI: http://www.tipografix.ro/plugin-wordpress.html
 Description: Calculeaza preturile pentru produse tipogafice bazate pe tiraj
-Version: 1.0.0
+Version: 1.0.1
 Author: Gabriel Braila
 Author URI: https://plus.google.com/u/0/107467003969505231772/posts
 License: GPL2

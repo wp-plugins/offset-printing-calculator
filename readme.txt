@@ -3,7 +3,7 @@ Contributors: innermond
 Tags: printing calculator, offset calculator, calculator
 Requires at least: 3.4.2
 Tested up to: 3.4.2
-Stable tag: 1.1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,7 +62,7 @@ prices will be calculated regarding copies volume. But if you fill adventurous j
 
 == Changelog ==
 
-= 1.1 =
+= 1.0.1 =
 * A brutal bug solved which altered calculation on sideprint cases. Now working
 
 = 1.0 =
