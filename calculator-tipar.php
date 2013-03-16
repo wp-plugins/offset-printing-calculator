@@ -99,8 +99,8 @@ class Calculator
         );
     }
 
-	static function init()
-	{
+    static function init()
+    {
 
         // insert into admin menus
         if (is_admin())
@@ -124,14 +124,14 @@ class Calculator
 
     }
 
-	static function admin_menu() 
+    static function admin_menu() 
     {
 
-		add_menu_page(
+        add_menu_page(
             'calculator offset','Calculator','manage_options','calculator_tipar_offset', array('Calculator', '_help.php')); 
-		add_submenu_page('calculator_tipar_offset', 
+        add_submenu_page('calculator_tipar_offset', 
             'panou control','Panou control', 'manage_options', 'calculator_tipar_offset_panel','Calculator::view_settings');
-	}
+    }
 
     static function __callStatic($func, $args)
     {
@@ -266,8 +266,8 @@ class Calculator
             return false; 
     }    
 
-	static function view_settings()
-	{
+    static function view_settings()
+    {
 
         // "false" values will not be tolerated
         $options = array_filter(get_option(self::$default['title']));
@@ -280,7 +280,7 @@ class Calculator
         $folds_price = self::select_options($folds_price);
         // view control
         include dirname( __FILE__ ).'/include/views/control_extended.php';
-	}
+    }
 
     /**
     *   opposite of naked function which is similar with empty but 0 or '0' are not considered "empty"
@@ -665,8 +665,8 @@ class Calculator
         );
     }
 
-	static function init()
-	{
+    static function init()
+    {
 
         // insert into admin menus
         if (is_admin())
@@ -690,14 +690,14 @@ class Calculator
 
     }
 
-	static function admin_menu() 
+    static function admin_menu() 
     {
 
-		add_menu_page(
+        add_menu_page(
             'calculator offset','Calculator','manage_options','calculator_tipar_offset', array('Calculator', '_help.php')); 
-		add_submenu_page('calculator_tipar_offset', 
+        add_submenu_page('calculator_tipar_offset', 
             'panou control','Panou control', 'manage_options', 'calculator_tipar_offset_panel','Calculator::view_settings');
-	}
+    }
 
     static function __callStatic($func, $args)
     {
@@ -832,8 +832,8 @@ class Calculator
             return false; 
     }    
 
-	static function view_settings()
-	{
+    static function view_settings()
+    {
 
         // "false" values will not be tolerated
         $options = array_filter(get_option(self::$default['title']));
@@ -846,7 +846,7 @@ class Calculator
         $folds_price = self::select_options($folds_price);
         // view control
         include dirname( __FILE__ ).'/include/views/control_extended.php';
-	}
+    }
 
     /**
     *   opposite of naked function which is similar with empty but 0 or '0' are not considered "empty"
