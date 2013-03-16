@@ -23,8 +23,10 @@ well known for people from printing field like:
 
 = Translations =
 
-Thank you all guys, who submitted translations to your language. CodeColorer
-is currently available in following languages:
+<<<<<<< .mine
+The plugin is currently available in following languages:
+=======
+>>>>>>> .r682829
 
 * English
 * Romanian
