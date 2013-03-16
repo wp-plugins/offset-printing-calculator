@@ -23,11 +23,6 @@ well known for people from printing field like:
 
 = Translations =
 
-<<<<<<< .mine
-The plugin is currently available in following languages:
-=======
->>>>>>> .r682829
-
 * English
 * Romanian
 
