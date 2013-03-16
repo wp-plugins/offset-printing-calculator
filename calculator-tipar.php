@@ -1,4 +1,3 @@
-<<<<<<< .mine
 <?php
 /*
 Plugin Name: PHP - Printing House Pricer
@@ -564,7 +563,7 @@ class Validate
 
 }
 
-Calculator::init();=======
+Calculator::init();
 <?php
 /*
 Plugin Name: PHP - Printing House Pricer
@@ -1130,4 +1129,4 @@ class Validate
 
 }
 
-Calculator::init();>>>>>>> .r682829
+Calculator::init();
