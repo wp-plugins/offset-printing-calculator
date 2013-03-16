@@ -68,8 +68,10 @@
 					$('#pret').html(html);
 				},
 
-				onclick = function()
+				onclick = function(evt)
 				{
+					evt.preventDefault();
+					
 					var 
 					formats = 1 * $('#formats').val(),
 					front = 1 * $('#front').val(), 
