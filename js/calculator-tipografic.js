@@ -59,7 +59,7 @@
 					vat_val = (price * ground.vat / 100).toFixed(2),
 
 					html = '<table>' +
-						'<tr><td>price</td><td>' + price + '</td></tr>' + 
+						'<tr><td>'+ ground.price +'</td><td>' + price + '</td></tr>' + 
 						'<tr><td>' + ground.vat_acronym + '</td><td>' + vat_val + '</td></tr>' + 
 						'<tr><td>total</td><td>' + ( ( 1 + ground.vat / 100) * price ).toFixed(2) + ' ' + ground.currency + '</td></tr>' + 
 					'</table>';

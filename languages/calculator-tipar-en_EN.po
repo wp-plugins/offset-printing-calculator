@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2012-10-23 00:18+0200\n"
-"PO-Revision-Date: 2012-10-23 00:19+0200\n"
-"Last-Translator: Volt-media <innermond@yahoo.com>\n"
+"PO-Revision-Date: 2014-08-07 19:28+0200\n"
+"Last-Translator: Gabriel Braila <innermond@yahoo.com>\n"
 "Language-Team: \n"
 "Language: ro-RO\n"
 "MIME-Version: 1.0\n"
@@ -12,8 +12,7 @@ msgstr ""
 "X-Generator: Poedit 1.5.3\n"
 "X-Poedit-KeywordsList: _e;__;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: D:\\wamp\\www\\local.wordpress.ro\\wp-content\\plugins"
-"\\php-printing-house-pricer\n"
+"X-Poedit-SearchPath-0: D:\\wamp\\www\\local.wordpress.ro\\wp-content\\plugins\\php-printing-house-pricer\n"
 
 #: D:\wamp\www\local.wordpress.ro\wp-content\plugins\php-printing-house-pricer/calculator-tipar.php:82
 #: D:\wamp\www\local.wordpress.ro\wp-content\plugins\php-printing-house-pricer/calculator-tipar.php:83
@@ -182,6 +181,12 @@ msgstr "Copies"
 #: D:\wamp\www\local.wordpress.ro\wp-content\plugins\php-printing-house-pricer/include/views/widget.php:38
 msgid "Calculeaza"
 msgstr "Calculate"
+
+msgid "tva"
+msgstr "vat"
+
+msgid "pret"
+msgstr "price"
 
 #~ msgid "Help"
 #~ msgstr "Ajutor"

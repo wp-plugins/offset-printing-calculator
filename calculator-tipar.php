@@ -38,9 +38,8 @@ class Calculator
 
         'currency' => 'euro',
         'vat' => 24,
-        'vat_acronym' => 'vat',
 
-        'format' => array(1 => 'A3', 2 => 'A4', 4 => 'A5', 6 => 'A4/3', 8 => 'A6'),
+        'format' => array(1 => 'A3', 2 => 'A4', 4 => 'A5', 6 => 'A4/3', 8 => 'A6', 16 => 'A7'),
     ),
 
      $errors = array
@@ -235,10 +234,11 @@ class Calculator
     // get/set moderately global self::$options
     static function options($options = null)
     {
-        return 
         (is_null($options))
         ? self::$options = get_option(self::$default['title']) + self::$default
         : self::$options = array_intersect_key($options, self::$default) + self::$default;
+        $opts = self::$options += array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),);
+        return $opts;
     }
 
     static function widget($args)
@@ -246,7 +246,6 @@ class Calculator
         // DRY??
         self::options();
         self::$options['title'] = $args['before_title'] . self::$options['title'] . $args['after_title'];
-
         // view start
         echo '<script type="text/javascript"> document.calculator_tipografic_ground = '.json_encode(self::$options + array('error' => self::$errors)).'</script>';
         echo $args['before_widget'];
@@ -268,9 +267,9 @@ class Calculator
 
     static function view_settings()
     {
-
         // "false" values will not be tolerated
         $options = array_filter(get_option(self::$default['title']));
+        self::$options += array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),);
         // assure default values for extracted variables
         extract(self::$default);
         extract($options);
