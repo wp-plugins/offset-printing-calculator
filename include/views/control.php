@@ -36,4 +36,10 @@
 <label for="vat_acronym"><?php _e('Acronim TVA', 'calculator-tipar') ?></label>
 <input type="text" id="vat_acronym" name="vat_acronym" value="<?php echo $vat_acronym ?>" />
 
+<label for="thanks_text_line">The text line before the grateful link</label>
+<input type="text" id="thanks_text_line" name="thanks_text_line" value="<?php echo $thanks_text_line ?>" />
+
+<label for="thanks_text_link">The text of grateful link</label>
+<input type="text" id="thanks_text_link" name="thanks_text_link" value="<?php echo $thanks_text_link ?>" />
+
 </div>

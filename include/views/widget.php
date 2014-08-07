@@ -40,4 +40,5 @@
 <div id="pret">
 </div>
 
+<div class="friendly-link"><?php echo $thanks_text_line ?> <a href="http://www.printuridigital.ro" target="blank"><?php echo $thanks_text_link ?></a></div>
 </form>

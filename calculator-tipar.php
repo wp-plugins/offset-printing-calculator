@@ -40,6 +40,9 @@ class Calculator
         'vat' => 24,
 
         'format' => array(1 => 'A3', 2 => 'A4', 4 => 'A5', 6 => 'A4/3', 8 => 'A6', 16 => 'A7'),
+
+        'thanks_text_line' => 'Energised by',
+        'thanks_text_link' => 'the print firms friend',
     ),
 
      $errors = array
@@ -237,7 +240,7 @@ class Calculator
         (is_null($options))
         ? self::$options = get_option(self::$default['title']) + self::$default
         : self::$options = array_intersect_key($options, self::$default) + self::$default;
-        $opts = self::$options += array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),);
+        $opts = self::$options = array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),) + self::$options;
         return $opts;
     }
 
@@ -269,7 +272,7 @@ class Calculator
     {
         // "false" values will not be tolerated
         $options = array_filter(get_option(self::$default['title']));
-        self::$options += array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),);
+        $options = array('vat_acronym' => __('tva', 'calculator-tipar'), 'price' => __('pret', 'calculator-tipar'),) + $options;
         // assure default values for extracted variables
         extract(self::$default);
         extract($options);
