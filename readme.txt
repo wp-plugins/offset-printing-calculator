@@ -40,8 +40,9 @@ Depending on time limits I will answer you.
 2. Enable **Calculator** plugin on your *Plugins* page in *Site Admin*.
 3. Go to the *Calculator/PanelControl* page in *Site Admin* and change plugin's
    options.
-4. Go to the *Calculator/Calculator* page to see short explanations about factors used in prices calculation.
-5. Have fun if posible!
+4. Make sure to change in wp-config.php the line "define('WPLANG'); " to "define('WPLANG', 'en_EN');" or to whatever language you want, for example  ro_RO. Remember that till now there are only two translation files. You have to make a brand new one if you want the plugin localised in a language that doesn't have a coresponding translation file
+5. Go to the *Calculator/Calculator* page to see short explanations about factors used in prices calculation.
+6. Have fun if posible!
 
 
 == Frequently Asked Questions ==
